@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#navbar{
+    
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem .3rem;
+    box-shadow: 5px 5px 20px black;
+    background: black;
+}
+
+.navbar .navbar-brand{
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 2px 2px 10px blue;
+    color: blue !important;
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+
+}
+#navbarSupportedContent a:hover{
+
+    border-bottom: 2px solid blue;
+
+
+}
+#navbarSupportedContent button{
+    background: blue;
+    border-radius: 15px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(./pexels-ollivves-931018.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:0px 1px 0px #ccc,
+                0px 2px 0px #ccc,
+                0px 3px 0px #ccc,
+                0px 4px 0px #ccc,
+                0px 5px 0px #ccc,
+                0px 6px 0px #ccc,
+                0px 7px 0px #ccc;
+}
+
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background: blue !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+#about h1{
+    
+    font-weight: 500;
+    font-size: 50px;
+    
+}
+#houses{
+    background: #e5e5e5;
+}
+#houses h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#houses img{
+    width: 318px;
+    height: 207px;
+}
+.card{
+    /* width: 250px;
+    height: 300px; */
+    background: #e5e5e5;
+    border: none;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px ;
+}
+
+#houses .card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: .2s;
+
+
+}
+#contact{
+    background:white !important;
+    min-height: 90vh;
+}
+#contact img{
+    height: 400px;
+
+}
+#contact .box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+#contact input{
+    margin: 10px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+}
+#contact textarea{
+    margin: 10px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+}
+#contact button{
+    margin: 10px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+}
+@media screen and (max-width:430px) 
+{
+    #home h1{
+        font-size: 60px;
+    }
+
+    #home p{
+        display: none;
+    }
+    .form-control{
+        /* width: 220px;padding: 0%; */
+        font-size: 12px;
+        height: 30px;
+    }
+    .signin{
+        width: 60px;
+        font-size: 12px;
+        height: 30px;
+        overflow: hidden;
+        
+    }
+    #home .input-group{
+        width: 80%;
+        
+    }
+    #houses img{
+        width: 361px;
+    }
+}
+@media screen and (min-width:1007)and(max-width:1440px) {
+    #houses img{
+        width: 376px;
+    }
+
+}
